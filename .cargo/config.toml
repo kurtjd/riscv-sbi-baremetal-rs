@@ -1,0 +1,8 @@
+[alias]
+gdb = "run --config .cargo/gdb_config.toml"
+
+[target.riscv64gc-unknown-none-elf]
+runner = "qemu-system-riscv64 -machine virt -nographic -m 128M -smp 3 -kernel"
+
+[build]
+target = "riscv64gc-unknown-none-elf"

@@ -1,0 +1,11 @@
+[package]
+name = "riscv-sbi-baremetal-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fdt = "0.1.5"
+heapless = "0.8.0"
+riscv = "0.12.1"
+sbi-rt = { version = "0.0.3" }
+spin = "0.9.8"
